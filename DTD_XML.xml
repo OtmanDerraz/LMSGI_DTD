@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "catalog.dtd">
+<catalog>
+  <!-- Llista d'actors -->
+  <llista_actors>
+    <actor id="A1">
+      <nom>John Doe</nom>
+      <edat>45</edat>
+    </actor>
+    <actor id="A2">
+      <nom>Jane Smith</nom>
+    </actor>
+    <actor id="A3">
+      <nom>Robert Brown</nom>
+      <edat>34</edat>
+    </actor>
+  </llista_actors>
+
+  <!-- Llista de pel·lícules -->
+  <llista_pelicules>
+    <pelicula id="P1" idioma="EN">
+      <titol>The Great Adventure</titol>
+      <director>John Director</director>
+      <any>2020</any>
+      <actors>
+        <actor_ref ref="A1"/>
+        <actor_ref ref="A2"/>
+      </actors>
+    </pelicula>
+    <pelicula id="P2" idioma="ES">
+      <titol>La Gran Aventura</titol>
+      <director>Pedro Director</director>
+      <any>2021</any>
+      <actors>
+        <actor_ref ref="A3"/>
+      </actors>
+    </pelicula>
+  </llista_pelicules>
+
+  <!-- Llista de recomanacions -->
+  <llista_recomanacions_pelicules>
+    <recomanacio ref="P1"/>
+    <recomanacio ref="P2"/>
+  </llista_recomanacions_pelicules>
+</catalog>
